@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms Grid</title>
+</head>
+<body>
+    <header>
+        <div class="title-head">
+        <em>Register for</em>
+        <h2>Full Stack <strong>C</strong>onference</h2>
+      </div>
+    </header>
+
+    <main>
+
+       
+        <h3 class="card-head">Basic Info</h3>
+         
+        <div class="name">
+        <label for="name">Name : </label>
+        <input type="text" id="name">
+        </div>
+
+        <div class="address">
+        <label for="address">Email Address : </label>
+        <input type="text" id="address">
+        </div>
+     
+        <article class="role">
+
+       <label for="role-job">Job Role : </label>
+
+     
+        <select name="roles" id="role-job">
+                <option value="" disabled selected>Select Job Role</option>
+                <option value="java">Java Developer</option>
+                <option value="c">C Developer</option>
+                <option value="javascript">JavaScript Developer</option>
+        </select>
+    
+
+        </article>
+   
+
+     
+
+        <h3 class="card-head2">T-Shirt Info</h3>
+
+<div class="t-shirt-container">
+      <article class="size">
+    
+        <label for="size">Size: </label>
+        <select name="t-shirt-size" id="size">
+            <option value="" disabled selected>-</option>
+            <option value="xs">XS</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+        </select>
+        
+       </article>
+    
+    <article class="design">
+    
+        <label for="design">Design:</label>
+        <select name="theme" id="design">
+            <option value="" disabled selected>Select Theme</option>
+            <option value="conferences">Conferences</option>
+            <option value="celebretion">Celebretion</option>
+            <option value="universities">Universities</option>
+        </select>
+    
+    </article>
+</div>
+    
+        <article class="color">
+    
+        <label for="color">Color</label>
+        <select name="color-selector" id="color">
+            <option value="" disabled selected>Select a design theme above</option>
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+        </select>
+
+     </article>
+     <div class="otherjob">
+      <br>
+     <input id="role-job" type="text" placeholder="Other job role?">
+    </div>
+  
+
+
+
+      
+    </main>
+
+    <aside class="registration">
+
+      <h3 class="registration-head">Register for Activites *</h3>
+
+  
+                
+            
+        <article class="r-head1">
+         <input type="checkbox" name="main" id="main">
+         <label for="main">Main Conference</label>
+        </article>
+
+
+
+         <footer class="r-footer1">
+         <img src="/img/js.svg" alt="">
+         <p>200$</p>
+         </footer>
+
+      
+  
+
+     
+         
+         <article class="r-head2">
+             <input type="checkbox" name="main" id="main">
+             <label for="main">JavaScript Libraries Workshop</label>
+            </article>
+
+
+             <footer class="r-footer2">
+             <img src="/img/react.svg" alt="">
+             <p>100$</p>
+             </footer>
+
+
+
+  
+
+         <article class="r-head3">
+             <input type="checkbox" name="main" id="main">
+             <label for="main">Node.js Workshop</label>
+            </article>
+
+
+             <footer class="r-footer3">
+             <img src="/img/node.svg" alt="">
+             <p>100$</p>
+             </footer>
+        
+
+
+
+
+
+         
+         <article class="r-head4">
+             <input type="checkbox" name="main" id="main">
+             <label for="main">JavaScript FrameWorks Workshop</label>
+            </article>
+
+
+             <footer class="r-footer4">
+             <img src="/img/angular.svg" alt="">
+             <p>100$</p>
+             </footer>
+        
+   
+     
+
+
+    
+
+         <article class="r-head5">
+             <input type="checkbox" name="main" id="main">
+             <label for="main">Build tools Workshop</label>
+            </article>
+
+
+             <footer class="r-footer5">
+             <img src="/img/build.svg" alt="">
+             <p>100$</p>
+             </footer>
+        
+ 
+
+
+
+         
+         <article class="r-head6">
+             <input type="checkbox" name="main" id="main">
+             <label for="main">npm Workshop</label>
+            </article>
+
+
+             <footer class="r-footer6">
+             <img src="/img/npm.svg" alt="">
+             <p>100$</p>
+             </footer>
+        
+   
+     
+
+
+    
+
+         <article class="r-head7">
+             <input type="checkbox" name="main" id="main">
+             <label for="main">Express Workshop</label>
+            </article>
+
+
+             <footer class="r-footer7">
+             <img src="/img/express.svg" alt="">
+             <p>100$</p>
+             </footer>
+        
+   
+ </article>
+
+ <article class="total">
+     <h2>Total : $0</h2>
+ </article>
+
+    </aside>
+
+
+
+    <aside class="payment-container">
+        
+                <h2 class="pay-head">Payment Info</h2>
+                
+               
+                      
+                    <article class="payment-method">
+        
+                        <label for="payment-method">I'm going to pay with : </label>
+        
+                            <select name="payments" id="payment-method">
+                                <option value="" disabled selected>Select Payment Method</option>
+                                <option value="visa">Visa</option>
+                                <option value="paypal">PayPal</option>
+                                <option value="bitcoin">BitCoin</option>
+                            </select>
+        
+                    </article>
+
+
+
+        
+              
+                 <article class="expiration-date">
+                    <label for="start">Expiration Date:</label>
+                    <input type="date" id="start" name="expiration-start" min="2022-10-29" max="2030-12-31">
+              </article>
+        
+                 <article class="expiration-year">
+                    <label for="start">Expiration Year:</label>
+                    <input type="number" id="start" name="expiration-start" min="2022" max="2030">
+                </article>
+
+            
+               
+        
+                    <article class="card-number">
+                        <label for="card">Card Number:</label>
+                        <input id="card" type="tel" inputmode="numeric" pattern="[0-9\s]{13,19}" autocomplete="cc-number" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
+                    </article>
+                    
+        
+                    <article class="zip-code">
+                        <label for="zip-number">Zip Code: </label>
+                        <input type="number" minlength="6">
+                    </article>
+        
+                    <article class="cvv-code">
+                        <label for="cvv-number">CVV : </label>
+                        <input type="number" minlength="3" maxlength="3">
+                    </article>
+              
+             
+     
+
+        <section class="news">
+           <article>
+            <h4>PayPal</h4>
+            <p>If you selected the PayPal option we'll take you to Paypal's site to set up your billing information , when you click "Register" below</p>
+           </article>
+
+           <article>
+            <h4>BitCoin</h4>
+            <p>If you selected the PayPal option we'll take you to the CoinBase site to set up your billing information. Due to the nature of exchanging BitCoin , all Bitcoin transaction will be final</p>
+           </article>
+       
+        </section>
+
+        <button class="btn">Register</button>
+    </aside>
+
+    <footer class="footer-end">
+        <p><span>GRID FORMS</span></p>
+    </footer>
+</body>
+</html>
+
+
+
+
+  
+
+

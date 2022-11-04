@@ -1,0 +1,338 @@
+body {
+    margin:0;
+}
+header{
+    display: grid;
+    background-color: rgb(211, 83, 60);
+    color: white;
+    padding-top: 10px;
+    font-size: 1.8em;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-areas:". title title . . . ";
+}
+
+.title-head{
+   grid-area: title;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+strong{
+    color: rgb(69, 130, 187);
+}
+em{
+    font-size: 16px;
+}
+
+
+
+input {
+    display: block;
+    margin-top:10px;
+    width: 200px;
+    height: 30px;
+    border-color: rgb(0, 0, 0);
+    border-width: 3px;
+    border-style: solid;
+}
+select{
+    display: block;
+    margin-top:10px;
+    width: 200px;
+    height: 40px;
+    border-color: black;
+    border-width: 3px;
+    border-style: solid;
+}
+
+
+
+main{ 
+    background-color: rgb(69, 130, 187);
+    display: grid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:". head head head2 head2 ."
+    ". name name sizedesign sizedesign ."
+    ". address address  c  c ."
+    ".  role role o  o .";
+    grid-gap: 20px;
+    padding-bottom: 50px;
+    color: white;
+}
+
+
+ main h3{
+    font-size: 1.6em;
+}
+.size{
+    margin-right: 20px;
+}
+
+
+.name{
+    grid-area: name;
+    display: flex;
+    flex-direction: column;
+}
+
+.address{
+    grid-area: address;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-head{
+    display: flex;
+    flex-direction: column;
+    grid-area:head;
+}
+.card-head2{
+    display: flex;
+    flex-direction: column;
+    grid-area:head2;
+}
+
+.role{
+    grid-area: role;
+    display: flex;
+    flex-direction: column; 
+}
+
+.job-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.size select{
+    width: 40px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+
+
+.t-shirt-container{
+    grid-area: sizedesign;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+
+.color{
+    grid-area:c;
+}
+.otherjob{
+    grid-area:o;
+}
+
+
+/* == REGISTRATION == */
+
+.registration{
+    padding: 1px;
+    background-color:   rgb(211, 83, 60);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:". regh . . . ."
+    ". rh1 . rf1 . .  "
+    ". rh2 rf2  rh3  rf3. "
+    ". rh4  rf4 rh5  rf5  ."
+    ". rh6   rf6 rh7  rf7 ."
+    ". .  . . .t" ;
+    grid-gap:10px;
+    color: white;
+}
+
+.registration h3{
+    font-size: 1.6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img{
+    width: 20px;
+    height: 30px;
+}
+
+input[type=checkbox]{
+    width: 20px;
+    min-height: 1px;
+}
+
+.r-head1{
+    grid-area:rh1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer1{
+    grid-area:rf1;
+    display: flex;
+    flex-direction: column;
+}
+.r-head2{
+    grid-area:rh2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer2{
+    grid-area:rf2;
+    display: flex;
+    flex-direction: column;
+}
+.r-head3{
+    grid-area:rh3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer3{
+    grid-area:rf3;
+    display: flex;
+    flex-direction: column;
+}
+.r-head4{
+    grid-area:rh4;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer4{
+    grid-area:rf4;
+    display: flex;
+    flex-direction: column;
+}
+.r-head5{
+    grid-area:rh5;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer5{
+    grid-area:rf5;
+    display: flex;
+    flex-direction: column;
+}
+.r-head6{
+    grid-area:rh6;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer6{
+    grid-area:rf6;
+    display: flex;
+    flex-direction: column;
+}
+.r-head7{
+    grid-area:rh7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.r-footer7{
+    grid-area:rf7;
+    display: flex;
+    flex-direction: column;
+}
+
+.total{
+    grid-area: t;
+}
+
+.registration-head{
+    grid-area:regh;
+}
+label{
+    margin-left: 10px;
+}
+
+.payment-container{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color:  rgb(69, 130, 187);
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    grid-template-rows: repeat(7,100px);
+    grid-template-areas:". ph . . . ."
+    ". pm pm ed ey .  "
+    ". cn cn zc cc . "
+    ". news news news news . "
+    ". . . . . ."
+    ". . . . . ."
+    ". b . . . .";
+    grid-gap:2px;
+    color: white;
+}
+
+.pay-head{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.6em;
+    grid-area: ph;
+}
+.payment-method{
+    grid-area: pm;
+}
+
+.expiration-date{
+    grid-area: ed;
+}
+
+.expiration-year{
+    grid-area: ey;
+}
+
+.card-number{
+    grid-area: cn;
+}
+
+.zip-code{
+    grid-area: zc;
+}
+
+.cvv-code{
+    grid-area: cc;
+}
+
+.news{
+    grid-area:news;
+    display: flex;
+    flex-direction: column;
+}
+
+.news article{
+    margin-top:10px;
+    padding-left: 15px;
+    border: 3px rgb(69, 130, 187) solid;
+    background-color: rgb(211, 83, 60);
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(143, 77, 77);
+    color: white;
+    border: 3px rgb(156, 56, 49) solid;
+    grid-area: b;
+}
+
+.footer-end{
+    color: white;
+    background-color: rgb(211, 83, 60);
+    padding:20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
